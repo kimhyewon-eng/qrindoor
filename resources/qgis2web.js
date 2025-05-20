@@ -372,12 +372,7 @@ function onSingleClickWMS(evt) {
     var viewProjection = map.getView().getProjection();
     var viewResolution = map.getView().getResolution();
 
-    for (var i = 0; i < // wms_layers.length; i++) {
-        if (// wms_layers[i][1] && // wms_layers[i][0].getVisible()) {
-            var url = // wms_layers[i][0].getSource().getFeatureInfoUrl(
-                evt.coordinate, viewResolution, viewProjection, {
-                    'INFO_FORMAT': 'text/html',
-                });
+
             if (url) {
                 const wmsTitle = // wms_layers[i][0].get('popuplayertitle');
                 var ldsRoller = '<div id="lds-roller"><img class="lds-roller-img" style="height: 25px; width: 25px;"></img></div>';
